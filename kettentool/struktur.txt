@@ -1,0 +1,51 @@
+kettentool/                                  # 📦 Hauptpaket
+│
+├── __init__.py                             # 🎯 Addon-Registrierung & Globals
+├── autoload.py                             # 🔄 Automatische Modul-Registrierung
+│
+├── core/                                   # 🧠 Kern-System
+│   ├── __init__.py
+│   ├── constants.py                        # 📊 Globale Variablen & Caches
+│   ├── debug.py                            # 🐛 Debug & Performance System
+│   └── cache_manager.py                    # 💾 Cache-Verwaltung & Cleanup
+│
+├── utils/                                  # 🛠️ Utilities
+│   ├── __init__.py
+│   ├── collections.py                      # 📦 Blender Collection Management
+│   ├── materials.py                        # 🎨 Material-System
+│   ├── surface.py                          # 🌐 Surface Projection & Aura
+│   └── paintmode.py                        # 🖌️ Paint Mode Utilities
+│
+├── creation/                               # 🏭 Objekt-Erstellung
+│   ├── __init__.py
+│   ├── spheres.py                          # ⚪ Kugel-Erstellung & Registry
+│   ├── connectors.py                       # 🔗 Verbinder-System
+│   └── pattern_geometry.py                 # 📐 Pattern-Geometrie Generierung
+│
+├── ui/                                     # 🎨 User Interface
+│   ├── __init__.py
+│   │
+│   ├── property_groups/                    # ⚙️ Property Groups
+│   │   ├── __init__.py
+│   │   └── properties.py                   # 📝 Alle Property Definitionen
+│   │
+│   └── user_interface/                     # 🖼️ UI Komponenten
+│       ├── __init__.py
+│       │
+│       └── panels/                         # 📋 UI Panels (NEU: Modular!)
+│           ├── __init__.py                 # 🔄 Panel Registration
+│           ├── main_panel.py               # 🏠 Hauptpanel
+│           ├── tool_panels.py              # 🔧 Tools & Auto-Connect
+│           ├── paint_panel.py              # 🎨 Paint Mode Panel
+│           ├── pattern_panel.py            # 🔀 Pattern Connector Panel
+│           └── settings_panels.py          # ⚙️ Settings & Debug Panels
+│
+└── operators/                              # 🎮 Blender Operatoren
+    ├── __init__.py
+    ├── sphere_ops.py                       # ⚪ Sphere Operatoren
+    ├── connector_ops.py                    # 🔗 Connector Operatoren
+    ├── surface_ops.py                      # 🌐 Surface Operatoren
+    ├── system_ops.py                       # 💾 System Operatoren
+    ├── utility_ops.py                      # 🛠️ Utility Operatoren
+    ├── pattern_connector.py                # 🔀 Pattern Connector Operator
+    └── paint_operator.py                   # 🖌️ Paint Mode Operator
